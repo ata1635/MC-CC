@@ -1,0 +1,44 @@
+function Move(x)
+    for i = 0, x do
+        CheckInv()
+        turtle.placeDown()
+        turtle.forward()
+    end
+end
+
+function CheckInv()
+    i = 1
+    j = 0
+    while turtle.getItemCount() == 0 do
+        turtle.select(i)
+        i = i + 1
+        j = j + 1
+        if turtle.getSelectedSlot() == 16 then
+            i = 0
+        end
+        if j == 16 then
+            break
+        end
+    end
+end        
+
+function Plant(x)
+    for i = 0, x do
+        CheckInv()
+        Move(45)
+        turtle.turnRight()
+        turtle.forward()
+        turtle.turnRight()
+        CheckInv()
+        Move(45)
+        turtle.turnLeft()
+        turtle.forward()
+        turtle.turnLeft()
+    end
+end
+
+turtle.up()
+CheckInv()
+Plant(9)
+
+
