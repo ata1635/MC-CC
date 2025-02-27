@@ -5,9 +5,9 @@ function drop()
     end    
 end
 
-while true do   
+while true do
     for i = 1, 500 do
         turtle.attack()
     end
-    drop()
+    drop()    
 end
