@@ -1,0 +1,7 @@
+local speaker = peripheral.find("speaker")
+while true do
+    speaker.playSound("block.stone_button.click_on")
+    sleep(2)
+    speaker.playSound("entity.parrot.eat")
+    sleep(2)
+end
