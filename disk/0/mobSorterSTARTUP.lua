@@ -1,3 +1,4 @@
+--test
 rednet.open("right")
 turtle.up()
 turtle.up()
