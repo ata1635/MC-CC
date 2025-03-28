@@ -1,3 +1,4 @@
+--test
 while true do
     turtle.digUp()
     turtle.up()
