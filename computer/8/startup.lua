@@ -15,4 +15,5 @@ while true do
         print(message)
         shell.run("mobFlusher")
     end
+    os.sleep(0)
 end

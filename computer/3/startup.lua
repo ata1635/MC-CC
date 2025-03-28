@@ -6,4 +6,5 @@ while true do
         print(message)
         shell.run("attack")
     end
+    os.sleep(0)
 end

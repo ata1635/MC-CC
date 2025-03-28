@@ -10,4 +10,5 @@ while true do
 	print(message)
         shell.run("mobSorter")
     end
+    os.sleep(0)
 end
